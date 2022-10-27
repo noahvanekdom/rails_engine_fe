@@ -1,0 +1,6 @@
+Merchant Index wow
+merchant1 merchant2
+
+<% @merchants.each do |merchant| %>
+<p> <%= link_to merchant[:attributes][:name], merchant_path(merchant) %> </p>
+ <% end %>

@@ -1,0 +1,6 @@
+<h1> Welcome to <%= @merchant[:attributes][:name] %>'s Show Page'
+
+<% @items.each do |item| %>
+  <p>Name:  <%= link_to item[:attributes][:name], item_path(item) %></p>
+  <p>Unit Price:  <%= item[:attributes][:unit_price] %></p>
+  <% end %>
